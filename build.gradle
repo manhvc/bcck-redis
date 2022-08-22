@@ -1,0 +1,22 @@
+plugins {
+	id 'org.springframework.boot' version '2.6.11'
+	id 'io.spring.dependency-management' version '1.0.13.RELEASE'
+	id 'java'
+}
+
+group = 'vn.edu.uit.ms.qltt'
+version = '0.0.1-SNAPSHOT'
+sourceCompatibility = '1.8'
+
+repositories {
+	mavenCentral()
+}
+
+dependencies {
+	implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
+	implementation 'org.springframework.boot:spring-boot-starter-web'
+	implementation 'redis.clients:jedis:3.4.1'
+	implementation 'com.google.code.gson:gson:2.8.5'
+	runtimeOnly 'mysql:mysql-connector-java'
+
+}
